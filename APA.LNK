@@ -1,0 +1,7 @@
+# Linkfile for Pan Library Demo
+
+[Objects]
+apa.obj
+
+[Output]
+apa.gb
