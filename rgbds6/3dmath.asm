@@ -13,7 +13,7 @@
 ;* Check out issues 8,9,10,12, & 16 of C64 hacking magazine.
 ;*
 
-        INCLUDE "3dmac.inc"
+        INCLUDE "3dmacro.asm"
 
 ANGMAX  equ    128
 
