@@ -840,7 +840,7 @@ SetCGB_OBJP:
         ld      a,$80
         ld      [rOCPS],a
 
-        ld      bc,$406b        ; b = 64, c = $69
+        ld      bc,$4069        ; b = 64, c = $69
 .loop:
         ld      a,[hl+]
         ld      [c],a
