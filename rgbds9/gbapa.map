@@ -1,0 +1,65 @@
+SUMMARY:
+	ROM0: 1232 bytes used / 31536 free
+	WRAM0: 13 bytes used / 8179 free
+
+ROM0 bank #0:
+	EMPTY: $0000-$00ff ($0100 bytes)
+	SECTION: $0100-$05cf ($04d0 bytes) ["Start"]
+	         $0150 = start
+	         $017d = luper0
+	         $0186 = luper1
+	         $01ab = luper2
+	         $01d0 = luper3
+	         $01e3 = line
+	         $01fa = xline1
+	         $0211 = xline2
+	         $021f = xline3
+	         $0221 = xline4
+	         $0249 = xline5
+	         $026e = xline7
+	         $0285 = point
+	         $02b0 = point1
+	         $02be = point4
+	         $02c8 = point5
+	         $02cf = point6
+	         $02d9 = point7
+	         $02da = fill
+	         $02da = chnuloop
+	         $02e3 = chnuloop2
+	         $02ed = waitvbl
+	         $02f1 = notyet
+	         $02f8 = white
+	         $02fd = black
+	         $0302 = nor_col
+	         $0307 = move_char
+	         $0307 = cls
+	         $030e = lp1
+	         $0321 = lp2
+	         $032a = move_text
+	         $032d = mve
+	         $0334 = wloop1
+	         $0336 = hole1
+	         $0347 = exdehl
+	         $0350 = charset
+	         $0390 = the_text
+	         $05d0 = the_text.end
+	EMPTY: $05d0-$7fff ($7a30 bytes)
+	TOTAL EMPTY: $7b30 bytes
+
+WRAM0 bank #0:
+	SECTION: $c000-$c00c ($000d bytes) ["Variables"]
+	         $c000 = x1
+	         $c001 = x2
+	         $c002 = y1
+	         $c003 = y2
+	         $c004 = dels
+	         $c005 = delp
+	         $c006 = delse
+	         $c007 = delsx
+	         $c008 = delsy
+	         $c009 = delde
+	         $c00a = deldx
+	         $c00b = deldy
+	         $c00c = color
+	EMPTY: $c00d-$dfff ($1ff3 bytes)
+	TOTAL EMPTY: $1ff3 bytes
