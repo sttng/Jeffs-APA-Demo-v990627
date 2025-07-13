@@ -11,9 +11,10 @@ MACRO RGBSet
         ENDM
 
 MACRO lcd_WaitVRAM2
-        ld      a,[rSTAT]       ; <---+
-        and     STATF_BUSY      ;     |
-        jr      nz,@-5          ; ----+
+	.loop_lcd_WaitVRAM2\@
+        ld      a,[rSTAT]                        ; <---+
+        and     STATF_BUSY                       ;     |
+        jr      nz, .loop_lcd_WaitVRAM2\@        ; ----+
         ENDM
 
 DEF RENDER_TO_VRAM     equ     0     ; 0 = $C000, 1 = $8000

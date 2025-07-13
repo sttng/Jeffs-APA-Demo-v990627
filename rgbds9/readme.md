@@ -6,8 +6,9 @@ Also noteworthy mabe this change in apa.asm with the ```jr```:
 
 ```
 MACRO lcd_WaitVRAM2
-        ld      a,[rSTAT]       ;                   <---+
-        and     STATF_BUSY      ;                       |
-        jr      nz,@-5          ; was @-4 now @-5   ----+
+	.loop_lcd_WaitVRAM2\@                        ; <---+
+        ld      a,[rSTAT]                        ;     |
+        and     STATF_BUSY                       ;     |
+        jr      nz, .loop_lcd_WaitVRAM2\@        ; ----+
         ENDM
 ```
